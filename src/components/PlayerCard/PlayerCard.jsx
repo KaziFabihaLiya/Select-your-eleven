@@ -25,7 +25,7 @@ const PlayerCard = ({player, availableBalance, setAvailableBalance, purchasedPla
             <div className="card bg-base-100 shadow-sm p-4">
                 <figure>
                     <img className='w-full h-[300px] object-cover'
-                    src={player["player_image"]}
+                    src={player.player_image}
                     alt="Shoes" />
                 </figure>
                 <div className="mt-4">
@@ -35,7 +35,7 @@ const PlayerCard = ({player, availableBalance, setAvailableBalance, purchasedPla
                     </div>
                     <div className="flex justify-between mt-4 border-b-1 border-gray-400 pb-2">
                         <div className="flex items-center gap-2">
-                            <img className='w-[20px] h-[20px]' src="https://i.ibb.co.com/XZJNkShH/Group-1.png" alt="" />
+                            <img className='w-[20px] h-[20px]' src="{https://i.ibb.co.com/XZJNkShH/Group-1.png}" alt="" />
                             <span>Bangladesh</span>
                         </div>
                         <button className='btn'>All rounder</button>
