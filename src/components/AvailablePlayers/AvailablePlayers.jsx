@@ -2,8 +2,7 @@ import React, { use } from 'react';
 import PlayerCard from '../PlayerCard/PlayerCard';
 
 
-const AvailablePlayers = ({playerPromise, setAvailableBalance, availableBalance, purchasedPlayers, 
-                        setPurchasedPlayers}) => {
+const AvailablePlayers = ({playerPromise, setAvailableBalance, availableBalance, purchasedPlayers, setPurchasedPlayers}) => {
 
     const players = use(playerPromise);
     return (
