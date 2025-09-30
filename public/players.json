@@ -7,7 +7,7 @@
     "rating": 9.5,
     "batting_style": "Left-hand Bat",
     "bowling_style": "Slow Left-arm Orthodox",
-    "price": "$150,000"
+    "price": "150,000"
   },
   {
     "player_image": "https://i.ibb.co.com/SDXPmFbY/gettyimages-1241798654-612x612.jpg",
@@ -17,7 +17,7 @@
     "rating": 8.8,
     "batting_style": "Left-hand Bat",
     "bowling_style": "Right-arm Offbreak",
-    "price": "$120,000"
+    "price": "120,000"
   },
   {
     "player_image": "https://i.ibb.co.com/7x9VKBJP/gettyimages-2154844077-612x612.jpg",
@@ -27,7 +27,7 @@
     "rating": 9.0,
     "batting_style": "Left-hand Bat",
     "bowling_style": "Left-arm Fast-Medium",
-    "price": "$130,000"
+    "price": "130,000"
   },
   {
     "player_image": "https://example.com/images/andre-russell.png",
@@ -37,7 +37,7 @@
     "rating": 9.6,
     "batting_style": "Right-hand Bat",
     "bowling_style": "Right-arm Fast",
-    "price": "$200,000"
+    "price": "200,000"
   },
   {
     "player_image": "https://example.com/images/kieron-pollard.png",
@@ -47,7 +47,7 @@
     "rating": 9.2,
     "batting_style": "Right-hand Bat",
     "bowling_style": "Right-arm Medium",
-    "price": "$180,000"
+    "price": "180,000"
   },
   {
     "player_image": "https://example.com/images/david-miller.png",
@@ -57,7 +57,7 @@
     "rating": 8.9,
     "batting_style": "Left-hand Bat",
     "bowling_style": "Right-arm Offbreak",
-    "price": "$140,000"
+    "price": "140,000"
   },
   {
     "player_image": "https://example.com/images/rashid-khan.png",
@@ -67,7 +67,7 @@
     "rating": 9.7,
     "batting_style": "Right-hand Bat",
     "bowling_style": "Legbreak Googly",
-    "price": "$220,000"
+    "price": "220,000"
   },
   {
     "player_image": "https://example.com/images/mahmudullah.png",
@@ -77,7 +77,7 @@
     "rating": 8.5,
     "batting_style": "Right-hand Bat",
     "bowling_style": "Right-arm Offbreak",
-    "price": "$110,000"
+    "price": "110,000"
   },
   {
     "player_image": "https://example.com/images/mashrafe.png",
@@ -87,7 +87,7 @@
     "rating": 8.0,
     "batting_style": "Right-hand Bat",
     "bowling_style": "Right-arm Medium-Fast",
-    "price": "$100,000"
+    "price": "100,000"
   },
   {
     "player_image": "https://example.com/images/chris-gayle.png",
@@ -97,6 +97,6 @@
     "rating": 9.8,
     "batting_style": "Left-hand Bat",
     "bowling_style": "Right-arm Offbreak",
-    "price": "$250,000"
+    "price": "250,000"
   }
 ]

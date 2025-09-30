@@ -1,26 +1,31 @@
-import React, { use } from 'react';
-import PlayerCard from '../PlayerCard/PlayerCard';
+import React, { useState } from 'react';
 
 
-const AvailablePlayers = ({playerPromise, setAvailableBalance, availableBalance, purchasedPlayers, 
-                        setPurchasedPlayers}) => {
 
-    const players = use(playerPromise);
+const PlayerCard = ({player, availableBalance, setAvailableBalance, purchasedPlayers, setPurchasedPlayers}) => {
+
+    
+
+    const handleBalance = (playerData) =>
+    {
+        const playerPrice = (playerData.price).split(',').join('')
+        if (availableBalance < playerPrice) {
+            alert('You do not have enough balance to select this player');
+            return;
+        } else {
+            setIsSelected(true)
+            setAvailableBalance(availableBalance - playerPrice);
+        }
+        setPurchasedPlayers([...purchasedPlayers, playerData])
+    }
+
+    const [isSelected, setIsSelected] = useState(false);
+    
     return (
-        <div className='max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-3'>
-
-            {
-                players.map(player => <PlayerCard 
-                    purchasedPlayers={purchasedPlayers} 
-                    setPurchasedPlayers={setPurchasedPlayers}
-                    availableBalance={availableBalance} 
-                    setAvailableBalance={setAvailableBalance} 
-                    player={player}></PlayerCard>)
-            }
-            {/* <div className="card bg-base-100 w-96 shadow-sm p-4">
+            <div className="card bg-base-100 shadow-sm p-4">
                 <figure>
-                    <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    <img className='w-full h-[300px] object-cover'
+                    src={player["player_image"]}
                     alt="Shoes" />
                 </figure>
                 <div className="mt-4">
@@ -41,18 +46,20 @@ const AvailablePlayers = ({playerPromise, setAvailableBalance, availableBalance,
                         <span>5</span>
                     </div>
                     <div className='flex justify-between mt-4'>
-                        <span className='font-bold'>Left Hand Bat</span>
+                        <span className='font-bold'>{player.batting_style}</span>
                         <span>Right Hand Bowl</span>
                     </div>
                     <div className="card-actions mt-4 flex justify-between items-center">
-                        <p className='font-bold'>Price: $15000000 </p>
-                        <button className="btn">Choose Player</button>
+                        <p className='font-bold'>Price: ${player.price} Coin</p>
+                        <button disabled={isSelected} onClick={()=> {
+                            
+                            handleBalance(player)
+                        }} className="btn">{isSelected?`Selected`: `Choose Player`}</button>
                     </div>
                     
                 </div>
-            </div> */}
-        </div>
+            </div>
     );
 };
 
-export default AvailablePlayers;
+export default PlayerCard;
